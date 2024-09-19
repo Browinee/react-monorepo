@@ -1,0 +1,18 @@
+{
+  "name": "@j-org/button",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "button"
+  ],
+  "author": "",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "echo \"message from @j-org/button\" && exit 0"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
