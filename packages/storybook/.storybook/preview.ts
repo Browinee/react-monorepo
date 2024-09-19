@@ -9,6 +9,8 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+        number: /(width|height|size)$/i,
+        text: /(title|label|name)$/i,
       },
     },
     darkMode: {
