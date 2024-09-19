@@ -1,0 +1,27 @@
+{
+  "name": "@j-org/react",
+  "version": "1.0.0",
+  "description": "🚀 Beautiful and modern React UI library.",
+  "keywords": [
+    "components",
+    "react components",
+    "react ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src --dts"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@j-org/button": "workspace:*"
+  }
+}

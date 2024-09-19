@@ -9,7 +9,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "echo \"message from @j-org/button\" && exit 0"
+    "dev": "echo \"message from @j-org/button\" && exit 0",
+    "build": "tsup src --dts"
   },
   "peerDependencies": {
     "react": ">=18",
