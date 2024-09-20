@@ -1,8 +1,9 @@
 {
-  "name": "@j-org/storybook",
+  "name": "@justinlin/storybook",
   "version": "1.0.0",
   "description": "The BlankUI components development and testing interface system",
   "author": "",
+  "private": true,
   "keywords": [
     "storybook"
   ],
@@ -13,7 +14,7 @@
     "start": "pnpm dlx http-server storybook-static"
   },
   "devDependencies": {
-   "@storybook/addon-a11y": "^7.6.7",
+    "@storybook/addon-a11y": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.7",
     "@storybook/addon-links": "^7.6.7",

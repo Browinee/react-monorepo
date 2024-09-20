@@ -1,1 +1,1 @@
-export * from "@j-org/button";
+export * from "@justinlin/button";

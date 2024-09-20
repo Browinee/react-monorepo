@@ -1,6 +1,6 @@
 {
-  "name": "@j-org/button",
-  "version": "1.0.0",
+  "name": "@justinlin/button",
+  "version": "2.0.0",
   "description": "",
   "keywords": [
     "button"
@@ -9,7 +9,7 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "echo \"message from @j-org/button\" && exit 0",
+    "dev": "echo \"message from @justinlin/button\" && exit 0",
     "build": "tsup src --dts"
   },
   "peerDependencies": {

@@ -12,17 +12,24 @@
   "license": "MIT",
   "scripts": {
     "dev": "turbo dev",
-    "dev:sb": "turbo dev --filter=@j-org/storybook",
-    "build": "turbo build --filter=!@j-org/storybook",
+    "dev:sb": "turbo dev --filter=@justinlin/storybook",
+    "build": "turbo build --filter=!@justinlin/storybook",
     "lint": "pnpm lint:packages",
     "lint:packages": "eslint packages/**/*.{ts,tsx}",
     "lint:packages-fix": "eslint --fix ./packages/**/*.{ts,tsx}",
     "format:check": "prettier --check packages/**/**/src --cache",
     "format:write": "prettier --write packages/**/**/src --cache",
     "test": "jest --verbose",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "changeset": "changeset add",
+    "version": "changeset version",
+    "version:snapshot": "changeset version --snapshot dev",
+    "release": "changeset publish",
+    "release:snapshot": "changeset publish --snapshot --no-git-tag --tag dev"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.8",
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.3",
     "@storybook/react": "^7.6.20",
@@ -61,5 +68,8 @@
   "dependencies": {
     "turbo": "^2.1.2"
   },
-  "packageManager": "pnpm@8.15.5"
+  "packageManager": "pnpm@8.15.5",
+  "publishConfig": {
+    "access": "public"
+  }
 }
