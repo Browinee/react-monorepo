@@ -21,3 +21,7 @@ build
 !plopfile.js
 !react-shim.js
 !tsup.config.ts
+
+# clean-package
+packages/**/*.backup
+packages/**/*.backup.ts
